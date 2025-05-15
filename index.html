@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional.">
+  <meta name="author" content="Anchieta Albano">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <script src="js/menu.js"></script>
+  <title>Portfólio </title>
+</head>
+
+<body>
+  <header class="menu-fixo">
+    <h1>Portfólio | Nome </h1>
+    <nav class="container-header" aria-label="Menu principal">
+      <a href="#introducao" class="menu">Introdução</a>
+      <a href="#historico" class="menu">Histórico</a>
+      <a href="#interesses" class="menu">Interesses</a>
+      <a href="#progresso" class="menu">Habilidades</a>
+      <a href="#comentarios" class="menu">Depoimentos</a>
+      <a href="#aprendizado" class="menu">Aprendizado</a>
+      <a href="form.html" class="menu">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="perfil" class="perfil">
+      <img src="https://avatars.githubusercontent.com/u/111232477?v=4" alt="Foto de perfil"
+        class="foto-perfil">
+      <div class="informacoes">
+        <h2>José de Anchieta do Nascimento Albano</h2>
+        <p>Desenvolvedor de Software | Redes de Computadores</p>
+        <div id="redessociais">
+          <a href="https://github.com/Chiet4" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=bVGqATNwfhYq&format=png&color=000000" alt="GitHub" width="32" height="32">
+          </a>
+          <a href="https://www.linkedin.com/in/anchieta-albano" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="linkedin" width="32" height="32">
+          </a>
+          <a href="https://www.instagram.com/thaynaxt" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"
+              width="32" height="32">
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="conteudo-dividido">
+      <section id="introducao" class="card">
+        <h2>Sobre mim</h2>
+        <p>Olá me chamo Thayná, tenho 18 anos e sou estudante da área de tecnologia. <br> Finalizei meu ensino médio
+          recentemente e atualmente estou no ensino superior.</p>
+      </section>
+      <section id="historico" class="card">
+        <h2>Histórico Acadêmico</h2>
+        <ul>
+          <li>Sistemas e Mídias Digitais – Universidade Federal do Ceará (UFC) – Em andamento</li>
+          <li>Técnico em Informática – Instituto Federal do Ceará (IFCE) – Concluído</li>
+          <li>Integrado ao curso técnico – IFCE – Concluído</li>
+        </ul>
+      </section>
+      <section id="interesses" class="card">
+        <h2>Interesses</h2>
+        <ul>
+          <li>Desenvolvimento web</li>
+          <li>Design digital</li>
+          <li>Projetos interativos</li>
+          <li>Administração de projetos</li>
+        </ul>
+      </section>
+    </div>
+    
+    <section id="comentarios" class="depoimentos-container">
+      <h2>O que os clientes estão falando?</h2>
+      <div class="depoimentos encaixotado">
+        <div>
+          <img src="assets/cliente1.jpg" alt="cliente 1">
+          <span>Miranda Costa</span>
+          <p>Profissional rápido, atencioso e muito competente. Superou minhas expectativas em cada detalhe do projeto.
+            Foi um prazer trabalhar com ele!</p>
+        </div>
+        <div>
+          <img src="assets/cliente2.jpg" alt="cliente 2">
+          <span>Marcelo Bastos</span>
+          <p>Entregou tudo antes do prazo e com uma qualidade impecável. Se preocupou com cada detalhe e ainda deu
+            sugestões que melhoraram muito o resultado final. Recomendo de olhos fechados.</p>
+        </div>
+        <div>
+          <img src="assets/cliente3.jpg" alt="cliente 3">
+          <span>Alice Ferreira</span>
+          <p>Transformou minha ideia em um site funcional, responsivo e com um visual incrível. Mostrou muito capricho e
+            organização no processo. Muito obrigado mesmo!</p>
+        </div>
+        <div>
+          <img src="assets/cliente4.jpg" alt="cliente 4">
+          <span>Henrique Rodrigues</span>
+          <p>Excelente comunicação e domínio técnico. Explicou tudo com clareza, foi super acessível e resolveu todos os
+            problemas rapidamente. Com certeza voltarei a contratar.</p>
+        </div>
+      </div>
+      <div class="comments-container">
+        <h3>Deixe um comentário</h3>
+        <form class="form-comentario" action="/comentario" method="POST">
+          <div class="campo-form">
+            <label id="foto" for="user-picture">Escolha sua foto:</label>
+            <input type="file" name="user-picture" id="user-picture">
+          </div>
+          <div class="campo-form">
+            <label for="name-comments"><span>*</span> Nome:</label>
+            <input type="text" id="name-comments" name="name-comments" required>
+          </div>
+          <div class="campo-form">
+            <label for="comment"><span>*</span> Escreva seu comentário:</label>
+            <textarea name="comment" id="comment" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar comentário</button>
+        </form>
+      </div>
+    <section id="whatsapp-container">
+      <a href="http://wa.me/558591111262" target="_blank" class="link-limpo">
+        <h2> Se preferir entre em contato pelo <span class="texto-gradiente">WhatsApp</span></h2>
+      </a>
+      <div id="whatsapp-link">
+        <a href="http://wa.me/558591111262" target="_blank">
+          <img src="assets/whatsap.png" alt="icone_do_WhatsApp" height="100" width="100"> </a>
+      </div>
+    </section>
+    </section>
+    <section class="hobbies-container">
+      <h2>O que eu faço quando não estou trabalhando?</h2>
+      <div class="hobbies encaixotado">
+        <div>
+          <img src="assets/hobby1.jpeg" alt="hobby 1">
+          <span>Contemplo a natureza</span>
+        </div>
+        <div>
+          <img src="assets/hobby2.jpg" alt="hobby 2">
+          <span>Vou à praia</span>
+        </div>
+        <div>
+          <img src="assets/hobby3.jpg" alt="hobby 3">
+          <span>Vou ao cinema</span>
+        </div>
+        <div>
+          <img src="assets/hobby4.jpg" alt="hobby 4">
+          <span>Artesanato</span>
+        </div>
+        <div>
+          <img src="assets/hobby5.jpeg" alt="hobby 5">
+          <span>Acampo ao ar livre</span>
+        </div>
+        <div>
+          <img src="assets/hobby6.jpg" alt="hobby 6">
+          <span>Jogo</span>
+        </div>
+        <div>
+          <img src="assets/hobby7.jpg" alt="hobby 7">
+          <span>Curto com meus amigos</span>
+        </div>
+        <div>
+          <img src="assets/hobby8.jpg" alt="hobby 8">
+          <span>Vou à igreja</span>
+        </div>
+        <div>
+          <img src="assets/hobby9.jpg" alt="hobby 9">
+          <span>Me exercito</span>
+        </div>
+        <div>
+          <img src="assets/hobby10.jpg" alt="hobby 10">
+          <span>Me aventuro na cozinha</span>
+        </div>
+      </div>
+    </section>
+    <section id="aprendizado" class="aprendizado-container">
+      <section id="tecnologias-aprendizado" class="aprendizado-tecnologias">
+        <h2>🛠 Tecnologias que estou aprendendo e utilizando</h2>
+        <ul id="lista-aprendizado" class="lista-aprendizado">
+          <li>AWS (Amazon Web Services)</li>
+          <li>Google Cloud Platform (GCP)</li>
+          <li>Python e LangChain</li>
+          <li>Java e Kotlin</li>
+          <li>JavaScript</li>
+          <li>DevOps (integração e entrega contínua)</li>
+          <li>Linux (linha de comando e administração)</li>
+          <li>Windows Server</li>
+        </ul>
+      </section>
+      <section id="dicas-aprendizado" class="aprendizado-dicas">
+        <h2>💡 Dicas úteis para iniciantes</h2>
+        <ul id="lista-dicas" class="lista-dicas">
+          <li>Comece com uma base sólida da linguagem antes de avançar.</li>
+          <li>Use `git checkout nome-da-branch` sempre que for testar algo novo sem afetar o código principal.</li>
+          <li>Documente seus comandos e configurações, especialmente em Linux e ambientes em nuvem.</li>
+          <li>Use o terminal sempre que possível — vai te dar mais controle e produtividade.</li>
+          <li>No DevOps, sempre automatize tarefas repetitivas. Ferramentas como Ansible ou scripts em Bash ajudam
+            muito.
+          </li>
+        </ul>
+      </section>
+      <section id="trechos-codigo" class="aprendizado-codigo">
+        <h2>🧩 Trechos de código úteis</h2>
+        <pre id="codigo-langchain" class="codigo-exemplo"><code>
+        <span># Exemplo simples de uso do LangChain com Python</span>
+        from langchain.llms import OpenAI
+        llm = OpenAI(model_name="text-davinci-003")
+        resposta = llm("Explique o que é DevOps.")
+        print(resposta)
+        </code></pre>
+        <pre id="codigo-http-server" class="codigo-exemplo"><code>
+        <span># Comando básico para iniciar um servidor simples em Python</span>
+        python3 -m http.server 8000
+        </code></pre>
+        <pre id="codigo-ec2-cli" class="codigo-exemplo"><code>
+        <span># Criando uma instância EC2 via AWS CLI</span>
+          aws ec2 run-instances \
+            --image-id ami-1234567890abcdef0 \
+            --count 1 \
+            --instance-type t2.micro \
+            --key-name MinhaChave \
+            --security-groups MeuGrupo
+        </code></pre>
+      </section>
+      <!-- Seção anterior termina aqui -->
+    </section>
+    <div class="fundo-cor4">
+      <section id="progresso">
+        <h2>Habilidades Técnicas</h2>
+        <label class="habilidade">
+          HTML5
+          <div class="barra-progresso">
+            <div class="progresso" style="width:20%">20%</div>
+          </div>
+        </label>
+        <label class="habilidade">
+          Git
+          <div class="barra-progresso">
+            <div class="progresso" style="width:33%">33%</div>
+          </div>
+        </label>
+        <label class="habilidade">
+          CSS3
+          <div class="barra-progresso">
+            <div class="progresso" style="width:100%">100%</div>
+          </div>
+        </label>
+        <label class="habilidade">
+          Figma
+          <div class="barra-progresso">
+            <div class="progresso" style="width:90%">90%</div>
+          </div>
+        </label>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2025 Projeto Capacita C-Jovem</p>
+  </footer>
+</body>
+
+</html>
