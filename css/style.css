@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 :root {
@@ -15,8 +14,10 @@
   --shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-body {
+html, body {
   font-family: "Poppins";
+  overflow-x: hidden;
+
 }
 
 main {
@@ -60,11 +61,13 @@ main {
 }
 
 .depoimentos {
-  padding: 0 100px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .depoimentos div {
@@ -439,7 +442,7 @@ footer {
 .perfil {
   background-color: #2e0d42;
   text-align: center;
-  padding: 10vw;
+  padding: 10%;
 }
 
 .foto-perfil {
