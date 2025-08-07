@@ -50,7 +50,7 @@ O site foi pensado para funcionar bem em diferentes tamanhos de tela. O layout s
 
 ## 📬 Contato
 
-Se você quiser me contatar, basta clicar no botão de WhatsApp presente na página ou enviar uma mensagem pelo [formulário de contato]([form.html](https://chiet4.github.io/Portfolio/form.html)).
+Se você quiser me contatar, basta clicar no botão de WhatsApp presente na página ou enviar uma mensagem pelo [formulário de contato]([https://chiet4.github.io/Portfolio/form.html]).
 
 ## 💡 Inspiração e Objetivo
 
