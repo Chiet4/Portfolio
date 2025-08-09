@@ -1,0 +1,70 @@
+
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #000;
+}
+
+.interface {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilho cabeçalho */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #545454;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: .2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button{
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  
+}
+
+header .btn-contato button:hover {
+  box-shadow: 0 0 8px  #2f47cf;
+  background-color: #2f47cf;
+  transform: scale(1.05);
+}
