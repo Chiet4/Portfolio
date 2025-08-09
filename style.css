@@ -32,10 +32,21 @@ body {
   transition: .2s;
 }
 
-.btn-contato button:hover {
+button:hover {
   box-shadow: 0 0 8px  #2f47cf;
   background-color: #2f47cf;
   transform: scale(1.05);
+}
+
+h2.titulo {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2.titulo span {
+  color: #2f47cf;
 }
 
 /* Estilho cabeçalho */
@@ -114,4 +125,143 @@ section.topo-do-site .flex {
   100% {
     top:30px;
   }
+}
+
+/* Estilos especialidades */
+section.especialidades {
+  padding: 40px 4%;
+}
+
+.especialidades .flex {
+  gap: 60px;
+}
+
+.especialidades .especialidades-box {
+  padding: 40px;
+  color: #fff;
+  border-radius: 20px;
+  transition: .3s;
+  margin-top: 3rem;
+}
+
+.especialidades .especialidades-box:hover {
+  box-shadow: 0 0 25px #566fff;
+  transform: scale(1.05);
+}
+
+.especialidades .especialidades-box i {
+  font-size: 3.5rem;
+  color: #2f47cf;
+}
+
+.especialidades .especialidades-box h3 {
+  font-size: 1.7rem;
+  margin: 15px 0;
+}
+
+/* Estilo sobre */
+
+section.sobre {
+  padding: 0px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: #fff;
+  max-width: 600px;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 2.7rem;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #2f47cf;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+
+}
+
+.sobre .img-sobre img {
+  width: 375px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.sobre .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #2f47cf;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: .3s;
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+  background-color: #fff;
+  color: #2f47cf;
+}
+
+/* Estilo portfolio */
+
+section.portfolio {
+  margin-top: 80px;
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1b;
+}
+
+section.portfolio .flex {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: .9s;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+ 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.img-port:hover .overlay {
+  opacity: 1;
 }
