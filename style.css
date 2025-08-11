@@ -1,4 +1,3 @@
-
 /* Reset e base */
 * {
   margin: 0;
@@ -21,7 +20,7 @@ body {
   margin: 0 auto;
 }
 
-.btn-contato button{
+.btn-contato button {
   padding: 10px 40px;
   font-size: 1.2rem;
   font-weight: 600;
@@ -29,11 +28,12 @@ body {
   border-radius: 30px;
   border: 0;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-button:hover {
-  box-shadow: 0 0 8px  #2f47cf;
+button:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0 0 8px #2f47cf;
   background-color: #2f47cf;
   transform: scale(1.05);
 }
@@ -66,7 +66,7 @@ header a {
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 header a:hover {
@@ -80,9 +80,8 @@ header nav ul {
 
 header nav ul li {
   display: inline-block;
-  padding: 0 40px;
+  padding: 0 30px;
 }
-
 
 /* Estilo topo do site */
 
@@ -109,21 +108,21 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo-site p {
   color: #c7c7c7;
   font-size: 1.2rem;
-  margin: 40px 0 ;
+  margin: 40px 0;
   line-height: 30px;
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
   0% {
-    top:0;
+    top: 0;
   }
   100% {
-    top:30px;
+    top: 30px;
   }
 }
 
@@ -140,7 +139,7 @@ section.especialidades {
   padding: 40px;
   color: #fff;
   border-radius: 20px;
-  transition: .3s;
+  transition: 0.3s;
   margin-top: 3rem;
 }
 
@@ -189,7 +188,6 @@ section.sobre .flex {
 .sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
-
 }
 
 .sobre .img-sobre img {
@@ -199,7 +197,7 @@ section.sobre .flex {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -208,7 +206,7 @@ section.sobre .flex {
   font-size: 20px;
   cursor: pointer;
   margin: 0 5px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .sobre .txt-sobre .btn-social button:hover {
@@ -234,7 +232,7 @@ section.portfolio .flex {
   height: 460px;
   background-size: cover;
   background-position: 100% 0%;
-  transition: .9s;
+  transition: 0.9s;
   cursor: pointer;
   border-radius: 30px;
   position: relative;
@@ -243,7 +241,7 @@ section.portfolio .flex {
 .img-port:hover {
   background-position: 100% 100%;
 }
- 
+
 .overlay {
   position: absolute;
   top: 0;
@@ -264,4 +262,180 @@ section.portfolio .flex {
 
 .img-port:hover .overlay {
   opacity: 1;
+}
+
+/* Estilo formulário */
+
+section.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #2e2c2c;
+  border: none;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 0;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Estilo footer */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1b;
+}
+
+footer .flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+footer .line-footer.borda {
+  border-top: 1px solid #545454;
+}
+
+footer .line-footer p i {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+footer .line-footer p a {
+  color: #2f47cf;
+  text-decoration: none;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1270px) {
+}
+
+@media screen and (max-width: 989px) {
+
+  /* Classes gerais */
+  .flex {
+    flex-direction: column;
+  }
+
+  h2.titulo {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+
+  /* cabeçalho */
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+
+  /* topo do site */
+  section.topo-do-site {
+    padding: 20px 8%;
+  }
+
+  section.topo-do-site .flex {
+    gap: 40px;
+  }
+
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .topo-do-site .txt-topo-site h1 {
+    font-size: 2rem;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* especialidades */
+  section.especialidades  {
+   padding: 40px 8%; 
+  }
+
+  /* Sobre */
+  section.sobre {
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 2rem;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .sobre .btn-social {
+    text-align: center;
+  }
+
+  .img-sobre img {
+    width: 100%;
+  }
+
+  /* Portfolio */
+  section.portfolio {
+    padding: 80px 8%;
+  }
+
+  section.portfolio .flex {
+    gap: 50px;
+  }
+
+  .img-port {    
+    width: 100%;
+    max-width: 360px;
+    margin : 0 auto;
+
+  }
+
+  /* Rodapé */
+  footer .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .line-footer {
+    text-align: center;
+  }
+  
 }
