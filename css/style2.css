@@ -1,0 +1,226 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  padding-top: 80px;
+}
+
+/* Cabeçalho fixo */
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1a1a1a;
+  color: white;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.menu-fixo h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.container-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+.container-header a:hover {
+  background: #444;
+}
+
+/* Seção de perfil */
+.perfil {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.informacoes h2 {
+  margin-bottom: 10px;
+}
+#redessociais a img {
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+#redessociais a img:hover {
+  transform: scale(1.1);
+}
+
+/* Grid de conteúdo */
+.conteudo-dividido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Depoimentos */
+.depoimentos-container {
+  background: #e9ecef;
+  padding: 40px 20px;
+}
+.depoimentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.depoimentos div {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.depoimentos div img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.comments-container {
+  margin-top: 40px;
+}
+.form-comentario {
+  display: grid;
+  gap: 15px;
+  margin-top: 10px;
+}
+.campo-form label span {
+  color: red;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn-enviar {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-enviar:hover {
+  background-color: #333;
+}
+
+/* WhatsApp */
+#whatsapp-container {
+  margin-top: 30px;
+  text-align: center;
+}
+#whatsapp-link img {
+  margin-top: 10px;
+}
+.texto-gradiente {
+  background: linear-gradient(90deg, #25d366, #128c7e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hobbies */
+.hobbies-container {
+  padding: 40px 20px;
+  background: #f1f3f5;
+}
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.hobbies div {
+  text-align: center;
+}
+.hobbies img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.aprendizado-container {
+  padding: 40px 20px;
+  background: #fff;
+}
+.aprendizado-container section {
+  margin-bottom: 30px;
+}
+.lista-aprendizado,
+.lista-dicas {
+  padding-left: 20px;
+  list-style: disc;
+}
+.codigo-exemplo {
+  background: #212529;
+  color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+#progresso {
+  padding: 40px 20px;
+  background: #e9ecef;
+}
+.habilidade {
+  display: block;
+  margin-bottom: 15px;
+}
+.barra-progresso {
+  background: #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.progresso {
+  background-color: #0d6efd;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  padding: 8px 10px;
+  font-weight: bold;
+}
+
+.rodape {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
