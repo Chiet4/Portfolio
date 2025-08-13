@@ -1,48 +1,39 @@
 # 🌐 Portfólio Pessoal – José de Anchieta do Nascimento Albano
 
-Este é um projeto de site pessoal desenvolvido como parte do **Curso Capacita C-Jovem**. O site apresenta meu portfólio, experiências, habilidades, aprendizados e formas de contato profissional.
+Este é um projeto de site pessoal. O site apresenta meu portfólio, especialidades, experiências, projetos e formas de contato profissional.
 
 ## ✨ Funcionalidades
 
 - ✅ Navegação fluida com links de âncora
 - ✅ Layout responsivo adaptado para dispositivos móveis
-- ✅ Galeria de hobbies interativa com hover
-- ✅ Seção de depoimentos com form para comentários
-- ✅ Apresentação de tecnologias estudadas
-- ✅ Barra de progresso para habilidades técnicas
-- ✅ Link direto para contato via WhatsApp
-
+- ✅ Apresentação de especialidades e experiências
+- ✅ Seção de projetos (portfólio)
+- ✅ Seção "Sobre mim" com informações pessoais
+- ✅ Ccontato além de links direto para WhatsApp, Linkedin e GitHub.
 
 ## 📁 Estrutura de Arquivos
 
 ```
 📦 portfolio/
 ├── index.html            # Página principal
-├── form.html             # Formulário de contato (extra)
 ├── css/
 │   └── style.css         # Estilo principal do site
 ├── assets/
-│   ├── imagens           # Fotos de perfil, hobbies, ícones
-│   └── resume.png        # Favicon do site
+│   ├── imagens           # Fotos de perfil, ícones, projetos
+│   └── favicon.ico        # Favicon do site
 ├── js/
-    └── menu.js           # Menu interativo
+│   └── menu.js           # Menu interativo
+├── README.md             # Documentação do projeto
 ```
 
 ## 🛠 Tecnologias utilizadas
 
 - **HTML5** para estruturação semântica
 - **CSS3** com variáveis, grid/flexbox e responsividade
+- **JavaScript** para interatividade (menu fixo e outros scripts)
 - **Google Fonts**: Poppins
 - **Gradientes e sombras CSS** para identidade visual
 
-## 📸 Capturas de Tela
-
-| Seção | Exemplo |
-|-------|---------|
-| Menu fixo | ![](assets/screenshot-menu.png) |
-| Hobbies | ![](assets/screenshot-hobbies.png) |
-| Depoimentos | ![](assets/screenshot-depoimentos.png) |
-| Aprendizado | ![](assets/screenshot-aprendizado.png) |
 
 ## 📱 Responsividade
 
@@ -50,13 +41,14 @@ O site foi pensado para funcionar bem em diferentes tamanhos de tela. O layout s
 
 ## 📬 Contato
 
-Se você quiser me contatar, basta clicar no botão de WhatsApp presente na página ou enviar uma mensagem pelo [formulário de contato]([https://chiet4.github.io/Portfolio/form.html]).
+Se você quiser me contatar, basta clicar no botão de WhatsApp presente na página ou enviar uma mensagem pelo formulário de contato.
 
 ## 💡 Inspiração e Objetivo
 
 Este projeto é parte do trabalho final do Capacita C-Jovem, com foco em aplicar os conhecimentos de **design**, **front-end**, e **prototipagem web** adquiridos durante a formação.
 
 ## 👩‍💻 Autor
+
 <div>
   <table>
     <tr>
