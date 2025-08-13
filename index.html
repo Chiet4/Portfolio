@@ -6,270 +6,260 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio profissional.">
   <meta name="author" content="Anchieta Albano">
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/menu.js" defer></script>
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <script src="js/menu.js"></script>
+
   <title>Portfólio </title>
 </head>
 
 <body>
-  <header class="menu-fixo">
-    <h1>Portfólio Anchieta Albano </h1>
-    <nav class="container-header" aria-label="Menu principal">
-      <a href="#introducao" class="menu">Introdução</a>
-      <a href="#historico" class="menu">Histórico</a>
-      <a href="#interesses" class="menu">Interesses</a>
-      <a href="#progresso" class="menu">Habilidades</a>
-      <a href="#comentarios" class="menu">Depoimentos</a>
-      <a href="#aprendizado" class="menu">Aprendizado</a>
-      <a href="form.html" class="menu">Contato</a>
-    </nav>
+
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="#">
+          <img src="/assets/images/logo2.png" alt="Logo do Portfólio" width="150" height="150">
+        </a>
+      </div> <!-- logo -->
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#topo-do-site">Início</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Projetos</a></li>
+        </ul>
+      </nav> <!-- menu-desktop -->
+
+      <div class="btn-contato">
+        <a href="#contato">
+          <button>Contato</button>
+        </a>
+      </div> <!-- btn-contato -->
+
+      <div class="btn-menu-mobile" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div> <!-- btn-menu-mobile -->
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#topo-do-site">Início</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div><!-- menu-mobile -->
+      <div class="overlay-menu" id="overlay-menu">
+      </div> <!-- overlay-menu -->
+
+    </div> <!-- interface -->
   </header>
 
   <main>
-    <section id="perfil" class="perfil">
-      <img src="https://avatars.githubusercontent.com/u/111232477?v=4" alt="Foto de perfil" class="foto-perfil">
-      <div class="informacoes">
-        <h2>José de Anchieta do Nascimento Albano</h2>
-        <p>Desenvolvedor de Software | Redes de Computadores</p>
-        <div id="redessociais">
-          <a href="https://github.com/Chiet4" target="_blank">
-            <img src="https://img.icons8.com/?size=100&id=bVGqATNwfhYq&format=png&color=000000" alt="GitHub" width="32"
-              height="32">
-          </a>
-          <a href="https://www.linkedin.com/in/anchieta-albano" target="_blank">
-            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="linkedin"
-              width="32" height="32">
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"
-              width="32" height="32">
-          </a>
-        </div>
-      </div>
-    </section>
-    <div class="conteudo-dividido">
-      <section id="introducao" class="card">
-        <h2>Sobre mim</h2>
-        <p>Olá me chamo Anchieta Albano, tenho 22 anos e sou estudante da área de tecnologia. <br> Atualmente estou
-          finalizando o ensino superior.</p>
-      </section>
-      <section id="historico" class="card">
-        <h2>Histórico Acadêmico</h2>
-        <ul>
-          <li>Redes de Computadores – Universidade Federal do Ceará (UFC) – Em andamento</li>
-          <li>Técnico em Redes de Computadores – EEEP Prof° Rosangela Albuquerque de Couto – Concluído</li>
-        </ul>
-      </section>
-      <section id="interesses" class="card">
-        <h2>Interesses</h2>
-        <ul>
-          <li>Desenvolvimento web</li>
-          <li>Desenvolvimento backend</li>
-          <li>DevOps</li>
-          <li>Redes de Computadores</li>
-          <li>Desenvolvimento Android</li>
-        </ul>
-      </section>
-    </div>
+    <section class="topo-do-site" id="topo-do-site">
+      <div class="interface">
 
-    <section id="comentarios" class="depoimentos-container">
-      <h2>O que os clientes estão falando?</h2>
-      <div class="depoimentos encaixotado">
-        <div>
-          <img src="assets/cliente1.jpg" alt="cliente 1">
-          <span>Miranda Costa</span>
-          <p>Profissional rápido, atencioso e muito competente. Superou minhas expectativas em cada detalhe do projeto.
-            Foi um prazer trabalhar com ele!</p>
+        <div class="flex">
+
+          <div class="txt-topo-site">
+            <h1>OLÁ, EU SOU ANCHIETA ALBANO<span>.</span></h1>
+            <p>Desenvolvedor FullStack</p>
+            <p>Sou desenvolvedor FullStack apaixonado por criar soluções escaláveis, seguras e de alto desempenho,
+              unindo experiência em backend, frontend e DevOps.</p>
+
+            <div class="btn-contato">
+              <a href="#contato">
+                <button>Entre em Contato</button>
+              </a>
+            </div>
+
+          </div> <!-- txt-topo-site -->
+
+          <div class="img-topo-site">
+            <img src="/assets/images/anchieta.png" alt="Anchieta Albano" width="300" height="300">
+          </div> <!-- img-topo-site -->
+
         </div>
-        <div>
-          <img src="assets/cliente2.jpg" alt="cliente 2">
-          <span>Marcelo Bastos</span>
-          <p>Entregou tudo antes do prazo e com uma qualidade impecável. Se preocupou com cada detalhe e ainda deu
-            sugestões que melhoraram muito o resultado final. Recomendo de olhos fechados.</p>
-        </div>
-        <div>
-          <img src="assets/cliente3.jpg" alt="cliente 3">
-          <span>Alice Ferreira</span>
-          <p>Transformou minha ideia em um site funcional, responsivo e com um visual incrível. Mostrou muito capricho e
-            organização no processo. Muito obrigado mesmo!</p>
-        </div>
-        <div>
-          <img src="assets/cliente4.jpg" alt="cliente 4">
-          <span>Henrique Rodrigues</span>
-          <p>Excelente comunicação e domínio técnico. Explicou tudo com clareza, foi super acessível e resolveu todos os
-            problemas rapidamente. Com certeza voltarei a contratar.</p>
+
+      </div> <!-- interface -->
+    </section> <!-- topo-do-site -->
+
+
+    <section class="especialidades" id="especialidades">
+      <div class="interface">
+        <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+        <div class="flex">
+          <div class="especialidades-box">
+            <i class="bi bi-code-square"></i>
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites e aplicações web responsivas utilizando HTML, CSS, JavaScript, React, além de
+              experiência com Java, Python, Kotlin e Shell Scripts.</p>
+
+          </div> <!-- especialidades-box -->
+          <div class="especialidades-box">
+            <i class="bi bi-cart"></i>
+            <h3>Lojas Online</h3>
+            <p>Implementação de plataformas de e-commerce integrando frontend e backend, com foco em usabilidade e
+              desempenho.</p>
+          </div> <!-- especialidades-box -->
+          <div class="especialidades-box">
+            <i class="bi bi-infinity"></i>
+            <h3>Cloud & DevOps</h3>
+            <p>Experiência com AWS (EC2, IAM, VPC, S3), Terraform, Docker, CI/CD, além de monitoramento com Zabbix,
+              Cacti, Bind9, Nginx e Apache HTTP.</p>
+          </div> <!-- especialidades-box -->
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- especialidades -->
+
+    <section class="experiencia" id="experiencia">
+      <div class="interface">
+        <h2 class="titulo">EXPERIÊNCIA <span>PROFISSIONAL.</span></h2>
+        <div class="flex">
+
+          <div class="experiencia-item">
+            <h3>Tutor Estagiário – Fundação Demócrito Rocha</h3>
+            <span>Agosto 2024 – Novembro 2024</span>
+            <p>Atuação no projeto "Aprendendo a Programar com Games", com correção de atividades, trabalho em equipe,
+              gestão de pessoas, gestão de tempo e formação em tutoria.</p>
+          </div>
+
+          <div class="experiencia-item">
+            <h3>Consultor de Vendas – SA Soluções</h3>
+            <span>Julho 2021 – Dezembro 2021</span>
+            <p>Atendimento e consultoria na área de empréstimos consignados e consórcios em geral, garantindo clareza
+              nas informações e satisfação do cliente.</p>
+          </div>
+
+          <div class="experiencia-item">
+            <h3>Estagiário de TI – Inove Informática</h3>
+            <span>Janeiro 2021 – Junho 2021</span>
+            <p>Atendimento técnico e suporte em infraestrutura de redes e sistemas, contribuindo para a estabilidade e
+              eficiência dos serviços da instituição.</p>
+          </div>
+
+          <div class="experiencia-item">
+            <h3>Voluntário – Projeto TAMAR</h3>
+            <span>Junho 2019 – Março 2020</span>
+            <p>Desenvolvimento de atividades e estudos socioambientais na comunidade da Volta do Rio, com foco na
+              preservação ambiental e conservação da tartaruga marinha.</p>
+          </div>
+
         </div>
       </div>
-      <div class="comments-container">
-        <h3>Deixe um comentário</h3>
-        <form class="form-comentario" action="https://formsubmit.co/dd3056b3fa604a890066bf9889e1b1d5" method="POST">
-          <div class="campo-form">
-            <label id="foto" for="user-picture">Escolha sua foto:</label>
-            <input type="file" name="user-picture" id="user-picture">
+    </section> <!-- experiencia-->
+
+    <section class="sobre" id="sobre">
+      <div class="interface">
+        <div class="flex">
+
+          <div class="img-sobre">
+            <img src="/assets/images/self.jpeg" alt="Anchieta Albano" width="375" height="450">
+          </div> <!-- img-sobre -->
+
+          <div class="txt-sobre">
+            <h2> MUITO PRAZER, <span>SOU ANCHIETA ALBANO.</span></h2>
+            <p>Sou graduando em Redes de Computadores pela Universidade Federal do Ceará – Campus Quixadá, com previsão
+              de colação de grau em 18 de setembro de 2025. Possuo formação técnica em Redes de Computadores e
+              experiência em desenvolvimento FullStack, infraestrutura e suporte.</p>
+            <p>Já atuei como tutor estagiário na Fundação Demócrito Rocha, consultor de vendas na SA Soluções e
+              estagiário em TI na Inove Informática. Também participei de projetos socioambientais no Projeto TAMAR. Meu
+              foco é unir habilidades de backend, frontend e DevOps para entregar soluções completas e eficientes.</p>
+            <p>Prêmio: Projeto de Iniciação Científica – Desenvolvimento de um APP para denúncias ambientais na Ilha do
+              Guajiru.</p>
+
+            <div class="btn-social">
+              <a href="https://github.com/Chiet4" rel="noopener noreferrer" target="_blank"><button><i
+                    class="bi bi-github"></i></button></a>
+              <a href="https://www.linkedin.com/in/anchieta-albano/" rel="noopener noreferrer"
+                target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+              <a href="https://wa.me/5588993680769" rel="noopener noreferrer" target="_blank"><button><i
+                    class="bi bi-whatsapp"></i></button></a>
+            </div> <!-- btn-social -->
+
+          </div> <!-- txt-sobre -->
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- sobre -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="interface">
+        <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+        <div class="flex">
+          <div class="img-port" data-link="https://github.com/Chiet4/boneco-veio" style="background-image: url(/assets/images/boneco-veio.png);">
+            <div class="overlay">
+              Boneco Veio
+            </div>
           </div>
-          <div class="campo-form">
-            <label for="name-comments"><span>*</span> Nome:</label>
-            <input type="text" id="name-comments" name="name-comments" required>
+          <div class="img-port" data-link="https://github.com/Chiet4/boneco-veio" style="background-image: url(/assets/images/boneco-produtos.png);">
+            <div class="overlay"> Boneco Veio
+            </div>
           </div>
-          <div class="campo-form">
-            <label for="comment"><span>*</span> Escreva seu comentário:</label>
-            <textarea name="comment" id="comment" rows="5" required></textarea>
+          <div class="img-port" data-link="https://github.com/Chiet4/boneco-veio" style="background-image: url(/assets/images/boneco-veio.png);">
+            <div class="overlay">
+              Boneco Veio
+            </div>
           </div>
-          <button type="submit" class="btn-enviar">Enviar comentário</button>
+        </div> <!-- flex -->
+      </div> <!-- interface -->
+    </section> <!-- portfolio -->
+
+    <section class="formulario" id="contato">
+      <div class="interface">
+        <h2 class="titulo">ENTRE EM <span>CONTATO.</span></h2>
+        <form action="">
+          <input type="text" id="nome" name="nome" required placeholder="Seu nome:">
+          <input type="email" id="email" name="email" required placeholder="Seu e-mail:">
+          <input type="tel" id="celular" name="celular" required placeholder="Seu celular:">
+          <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem:"></textarea>
+          <div class="btn-enviar"><input type="submit" value="Enviar"></div>
         </form>
-      </div>
-      <section id="whatsapp-container">
-        <a href="http://wa.me/558591111262" target="_blank" class="link-limpo">
-          <h2> Se preferir entre em contato pelo <span class="texto-gradiente">WhatsApp</span></h2>
-        </a>
-        <div id="whatsapp-link">
-          <a href="http://wa.me/558591111262" target="_blank">
-            <img src="assets/whatsap.png" alt="icone_do_WhatsApp" height="100" width="100"> </a>
-        </div>
-      </section>
-    </section>
-    <section class="hobbies-container">
-      <h2>O que eu faço quando não estou trabalhando?</h2>
-      <div class="hobbies encaixotado">
-        <div>
-          <img src="assets/hobby1.jpeg" alt="hobby 1">
-          <span>Contemplo a natureza</span>
-        </div>
-        <div>
-          <img src="assets/hobby2.jpg" alt="hobby 2">
-          <span>Vou à praia</span>
-        </div>
-        <div>
-          <img src="assets/hobby3.jpg" alt="hobby 3">
-          <span>Vou ao cinema</span>
-        </div>
-        <div>
-          <img src="assets/hobby4.jpg" alt="hobby 4">
-          <span>Artesanato</span>
-        </div>
-        <div>
-          <img src="assets/hobby5.jpeg" alt="hobby 5">
-          <span>Acampo ao ar livre</span>
-        </div>
-        <div>
-          <img src="assets/hobby6.jpg" alt="hobby 6">
-          <span>Jogo</span>
-        </div>
-        <div>
-          <img src="assets/hobby7.jpg" alt="hobby 7">
-          <span>Curto com meus amigos</span>
-        </div>
-        <div>
-          <img src="assets/hobby8.jpg" alt="hobby 8">
-          <span>Vou à igreja</span>
-        </div>
-        <div>
-          <img src="assets/hobby9.jpg" alt="hobby 9">
-          <span>Me exercito</span>
-        </div>
-        <div>
-          <img src="assets/hobby10.jpg" alt="hobby 10">
-          <span>Me aventuro na cozinha</span>
-        </div>
-      </div>
-    </section>
-    <section id="aprendizado" class="aprendizado-container">
-      <section id="tecnologias-aprendizado" class="aprendizado-tecnologias">
-        <h2>🛠 Tecnologias que estou aprendendo e utilizando</h2>
-        <ul id="lista-aprendizado" class="lista-aprendizado">
-          <li>AWS (Amazon Web Services) CLI</li>
-          <li>Google Cloud Platform (GCP) CLI</li>
-          <li>Python e LangChain</li>
-          <li>Java e Kotlin</li>
-          <li>JavaScript</li>
-          <li>DevOps (integração e entrega contínua)</li>
-          <li>Linux (linha de comando e administração)</li>
-          <li>Windows Server</li>
-        </ul>
-      </section>
-      <section id="dicas-aprendizado" class="aprendizado-dicas">
-        <h2>💡 Dicas úteis para iniciantes</h2>
-        <ul id="lista-dicas" class="lista-dicas">
-          <li>Comece com uma base sólida da linguagem antes de avançar.</li>
-          <li>Estude e tenha uma boa lógica de programação.</li>
-          <li>Use `git checkout nome-da-branch` sempre que for testar algo novo sem afetar o código principal.</li>
-          <li>Documente seus comandos e configurações, especialmente em Linux e ambientes em nuvem.</li>
-          <li>Use o terminal sempre que possível — vai te dar mais controle e produtividade.</li>
-          <li>No DevOps, sempre automatize tarefas repetitivas. Ferramentas como Ansible ou scripts em Bash ajudam
-            muito.
-          </li>
-        </ul>
-      </section>
-      <section id="trechos-codigo" class="aprendizado-codigo">
-        <h2>🧩 Trechos de código úteis</h2>
-        <pre id="codigo-langchain" class="codigo-exemplo"><code>
-        <span># Exemplo simples de uso do LangChain com Python</span>
-        from langchain.llms import OpenAI
-        llm = OpenAI(model_name="text-davinci-003")
-        resposta = llm("Explique o que é DevOps.")
-        print(resposta)
-        </code></pre>
-        <pre id="codigo-http-server" class="codigo-exemplo"><code>
-        <span># Comando básico para iniciar um servidor simples em Python</span>
-        python3 -m http.server 8000
-        </code></pre>
-        <pre id="codigo-ec2-cli" class="codigo-exemplo"><code>
-        <span># Criando uma instância EC2 via AWS CLI</span>
-          aws ec2 run-instances \
-            --image-id ami-1234567890abcdef0 \
-            --count 1 \
-            --instance-type t2.micro \
-            --key-name MinhaChave \
-            --security-groups MeuGrupo
-        </code></pre>
-      </section>
-      <!-- Seção anterior termina aqui -->
-    </section>
-    <div class="fundo-cor4">
-      <section id="progresso">
-        <h2>Habilidades Técnicas</h2>
-        <label class="habilidade">
-          HTML5
-          <div class="barra-progresso">
-            <div class="progresso" style="width:70%">70%</div>
-          </div>
-        </label>
-        <label class="habilidade">
-          Git
-          <div class="barra-progresso">
-            <div class="progresso" style="width:60%">60%</div>
-          </div>
-        </label>
-        <label class="habilidade">
-          CSS3
-          <div class="barra-progresso">
-            <div class="progresso" style="width:60%">60%</div>
-          </div>
-        </label>
-        <label class="habilidade">
-          Java
-          <div class="barra-progresso">
-            <div class="progresso" style="width:40%">40%</div>
-          </div>
-        </label>
-        <label class="habilidade">
-          JavaScript
-          <div class="barra-progresso">
-            <div class="progresso" style="width:30%">30%</div>
-          </div>
-        </label>
-        <label class="habilidade">
-          DevOps AWS
-          <div class="barra-progresso">
-            <div class="progresso" style="width:70%">70%</div>
-          </div>
-        </label>
-      </section>
-    </div>
+      </div> <!-- interface -->
+    </section> <!-- formulario -->
   </main>
-  <footer class="rodape">
-    <p>Copyright &copy; 2025 – Todos os Direitos Reservados.</p>
+
+  <footer>
+    <div class="interface">
+      <div class="line-footer flex">
+        <div class="logo-footer">
+          <img src="/assets/images/logo2.png" alt="Logo do Portfólio" width="100" height="100">
+        </div> <!-- logo-footer -->
+        <div class="btn-social">
+          <a href="https://github.com/Chiet4" target="_blank" rel="noopener noreferrer"><button><i
+                class="bi bi-github"></i></button></a>
+          <a href="https://www.linkedin.com/in/anchieta-albano/" target="_blank" rel="noopener noreferrer"><button><i
+                class="bi bi-linkedin"></i></button></a>
+          <a href="https://wa.me/5588993680769" target="_blank" rel="noopener noreferrer"><button><i
+                class="bi bi-whatsapp"></i></button></a>
+        </div> <!-- btn-social -->
+      </div> <!-- line-footer -->
+
+      <div class="line-footer borda">
+        <p><i class="bi bi-envelope"></i>
+          <a href="mailto::anchietanalbano@gmail.com" rel="noopener noreferrer" target="_blank">
+            anchietanalbano@gmail.com </a>
+        </p>
+      </div> <!-- line-footer -->
+    </div> <!-- interface -->
   </footer>
 </body>
 
